@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+#inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(0, 0, 0);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg fill-opacity='0.13'%3E%3Ccircle fill='%23000000' cx='50' cy='0' r='50'/%3E%3Cg fill='%23020203' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23040406' cx='50' cy='100' r='50'/%3E%3Cg fill='%23060609' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%2307080b' cx='50' cy='200' r='50'/%3E%3Cg fill='%23090a0e' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%230b0c11' cx='50' cy='300' r='50'/%3E%3Cg fill='%230d0e14' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%230f1017' cx='50' cy='400' r='50'/%3E%3Cg fill='%2311121a' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%2312141d' cx='50' cy='500' r='50'/%3E%3Cg fill='%2314161f' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23161822' cx='50' cy='600' r='50'/%3E%3Cg fill='%23181a25' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%231a1c28' cx='50' cy='700' r='50'/%3E%3Cg fill='%231c1e2b' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%231e202e' cx='50' cy='800' r='50'/%3E%3Cg fill='%231f2230' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23212433' cx='50' cy='900' r='50'/%3E%3Cg fill='%23232636' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23252839' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: contain;
+  cursor: none;
+}
+
+#fondo {
+  background-color: #4d4d4d;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg fill-opacity='0.13'%3E%3Ccircle fill='%23000000' cx='50' cy='0' r='50'/%3E%3Cg fill='%23020203' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23040406' cx='50' cy='100' r='50'/%3E%3Cg fill='%23060609' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%2307080b' cx='50' cy='200' r='50'/%3E%3Cg fill='%23090a0e' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%230b0c11' cx='50' cy='300' r='50'/%3E%3Cg fill='%230d0e14' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%230f1017' cx='50' cy='400' r='50'/%3E%3Cg fill='%2311121a' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%2312141d' cx='50' cy='500' r='50'/%3E%3Cg fill='%2314161f' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23161822' cx='50' cy='600' r='50'/%3E%3Cg fill='%23181a25' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%231a1c28' cx='50' cy='700' r='50'/%3E%3Cg fill='%231c1e2b' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%231e202e' cx='50' cy='800' r='50'/%3E%3Cg fill='%231f2230' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23212433' cx='50' cy='900' r='50'/%3E%3Cg fill='%23232636' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23252839' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: contain;
+}
+
+ul {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  cursor: none;
+}
+
+ul li {
+  position: relative;
+  list-style: none;
+  cursor: none;
+}
+
+ul li a {
+  position: relative;
+  font-size: 3em;
+  text-decoration: none;
+  line-height: 1em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+}
+
+ul li a::before {
+  content: attr(data-text);
+  position: absolute;
+  color: var(--clr);
+  width: 0;
+  overflow: hidden;
+  transition: 1s;
+  border-right: 8px solid var(--clr);
+  -webkit-text-stroke: 1px var(--clr);
+  cursor: none;
+}
+
+ul li a:hover::before {
+  width: 100%;
+  filter: drop-shadow(0 0 25px var(--clr));
+  cursor: none;
+}
+
+.container-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 0px;
+  flex-direction: column;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-brand:hover {
+  color: orange;
+}
+
+.navbar-brand {
+  color: aliceblue;
+}
+
+#celeste:hover {
+  color: #00ade1;
+}
+
+#rosa:hover {
+  color: #ff6493;
+}
+
+#amarillo:hover {
+  color: #ffdd1c;
+}
+
+#verde:hover {
+  color: #00dc82;
+}
+
+#violeta:hover {
+  color: #dc00d4;
+}
+
+#rojo:hover {
+  color: #ff0000;
+}
+
+.contenedor {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.contenedor .page {
+  width: 100%;
+  height: 50vh;
+  top: 100px;
+  left: 0;
+  background: linear-gradient(15deg, black 90%, white 90%);
+  position: absolute;
+  border-radius: 20px;
+}
+
+.contenedor .page .contenido {
+  color: white;
+  padding: 35px;
+}
+
+.contenedor .page .contenido p {
+  columns: 1;
+}
+
+.page .contenido h2 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.main-image {
+  border-radius: 7px;
+  float: right;
+  width: 250px;
+}
+.icon {
+  width: 30px;
+  float: left;
+}
+@media only screen and (max-width: 800px) {
+  nav {
+    flex-direction: column;
+  }
+  .contenedor {
+    width: 100%;
+  }
+}
+
+#cursor {
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgb(255, 255, 255);
+  box-sizing: border-box;
+  transition: 0.1s;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  border-radius: 50%;
+  position: absolute;
+}
